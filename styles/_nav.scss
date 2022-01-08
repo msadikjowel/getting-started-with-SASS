@@ -1,0 +1,24 @@
+// nav nesting styles
+nav{
+    margin-top: 10px;
+    
+    ul{
+        list-style-type: none;
+
+        li{
+            display: inline-block;
+            margin: 15px;
+
+            a{
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
+            a:hover{
+                background: #000;
+                transition: .4s;
+            }
+        }
+    }
+}

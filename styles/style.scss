@@ -1,0 +1,123 @@
+@import "reset";
+@import "variables";
+@import "nav";
+
+$colors: (color1: red, color2: green, color3: blue);
+@each $color in $colors {
+    .text-#{$color} {
+        color: $color;
+    }
+}
+
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+   }
+}
+
+header{
+    background: $header-bgcolor;
+    padding-top: 20px;
+}
+
+
+
+@mixin setStyle ($size){
+    @if ($size == 'small'){
+        font-size: 12px;
+    }
+    @else if ($size == 'medium'){
+        font-size: 16px;
+    }
+    @else if ($size == 'large'){
+        font-size: 24px;
+    }
+    @else{
+        font-size:none;
+    }
+}
+
+header h2{
+    font-size: $h2-fontsize;
+    text-align: center;
+    @include setStyle (large)
+}
+
+main{
+    background: $main-bgcolor;
+}
+@mixin para-style ($size, $padding, $align) {
+    font-size: $size;
+    padding: $padding;
+    text-align: $align;
+}
+
+#desc p{
+    @include para-style(18px, 10px, justify)
+}
+
+#education p{
+    @include para-style(18px, 10px, justify )
+}
+
+main h4{
+    font-size: $h4-fontsize;
+}
+
+.btn{
+    border: none;
+    padding: 10px 20px;
+    background: coral;
+    color: white;
+    cursor: pointer;
+}
+
+#download-btn{
+    @extend .btn;
+    border-radius: 0px 20px 20px 0;
+}
+
+.learn-more-btn{
+    @extend .btn;
+    border-radius: 0px 20px 0 0px;
+}
+
+footer{
+    background: $footer-bgcolor;
+}
+
+#sass{
+    margin-top: 20px;
+}
+
+
+
+[class*="col-"]{
+    float: left;
+}
+
+// for loop
+@for $i from 1 through 12{
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+}
+
+// while loop
+/* $i: 1;
+@while $i < 13 {
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+    $i: $i + 1;
+} */
+
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+

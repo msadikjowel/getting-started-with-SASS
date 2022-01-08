@@ -1,0 +1,147 @@
+/* Browser reste code */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+header {
+  background: #f5b0e6;
+  padding-top: 20px;
+}
+
+header h2 {
+  font-size: 26px;
+  text-align: center;
+  font-size: 24px;
+}
+
+main {
+  background: #dddd9e;
+}
+
+#desc p {
+  font-size: 18px;
+  padding: 10px;
+  text-align: justify;
+}
+
+#education p {
+  font-size: 18px;
+  padding: 10px;
+  text-align: justify;
+}
+
+main h4 {
+  font-size: 20px;
+}
+
+.btn, #download-btn, .learn-more-btn {
+  border: none;
+  padding: 10px 20px;
+  background: coral;
+  color: white;
+  cursor: pointer;
+}
+
+#download-btn {
+  border-radius: 0px 20px 20px 0;
+}
+
+.learn-more-btn {
+  border-radius: 0px 20px 0 0px;
+}
+
+footer {
+  background: #8cb0b3;
+}
+
+#sass {
+  margin-top: 20px;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+/*# sourceMappingURL=style.css.map */
